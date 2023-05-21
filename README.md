@@ -188,4 +188,4 @@ if __name__ == "__main__":
 ## Output 1
 ![image](https://github.com/petchi11/Identification-of-Plant-Disease-using-Deep-Learning-Mini-Project-/assets/105230321/189d3cec-d639-4ae7-8626-c07a53adde48)
 ## Output 2
-
+![image](output.png)
