@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='js/main.js')}}">
+        <title>Plant Disease Detection</title>
+        <style>
+            body
+            {
+                background-image: url("{{url_for('static', filename='background1.jpg')}}");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1 class= "head">Identification of Plant Disease</h1>
+        
+            <div class="card">
+            <img src = "{{ url_for('static', filename='images1.jpg')}}" alt="flag" height="480" width="480">
+            <form action="/predict" method="POST" enctype="multipart/form-data">
+            
+            <input type="file" 
+                   id="file"
+                   class = "input" 
+                   name="file" >
+            <p>Drag your files here or click in this area.</p>
+            <button class="button" type="submit" style="--color: #00ff08;">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span> Predict</button>
+            </div>
+        <div class="answer">
+            <h3>{{ my }}</h3>
+        </div>
+        </form>
+        </center>
+    </body>
+</html>
