@@ -2,6 +2,7 @@
 
 
 ## Python Flask Program
+```python
 
 from flask import Flask, render_template, url_for, request
 import torch
@@ -182,5 +183,9 @@ def upload():
     
 if __name__ == "__main__":
     app.run(debug=True)
+```
+
+## Output 1
 ![image](https://github.com/petchi11/Identification-of-Plant-Disease-using-Deep-Learning-Mini-Project-/assets/105230321/189d3cec-d639-4ae7-8626-c07a53adde48)
-## Output
+## Output 2
+
